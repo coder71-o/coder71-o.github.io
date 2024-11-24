@@ -1,58 +1,159 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <title>Elena's Portfolio Page</title>
     <link rel="icon" type="image/png" href="images/favicon_1.png"/>
     <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-    <div class="card m-2" style="width: 20rem;">
-        <img src="images/pfp.jpg" class="card-img-top" alt="My profile picture">
-        <div class="card-body">
-          <h5 class="card-title">About Me</h5>
-          <p class="card-text">I am from Cypress, Texas and am a first-year student
-            at Oregon State University- Cascades. I play soccer and love the outdoors. 
-            I dream of travelling to different places in the world and learning about the cultures I interact with.
-            I am learning how to play the piano and speak a few different languages. 
-            I also have three cats that I love dearly.</p>
+    <link href="https://getbootstrap.com/docs/5.1/examples/carousel/carousel.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Elena Sic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:sice@oregonsate.edu">Email</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="./images/about_me.jpg"/>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>About Me</h1>
+            <p>I am from Cypress, Texas and am a first-year student
+              at Oregon State University- Cascades. I play soccer and love the outdoors. 
+              I dream of travelling to different places in the world and learning about the cultures I interact with.
+              I am learning how to play the piano and speak a few different languages. 
+              I also have three cats that I love dearly.</p>
+          </div>
         </div>
+      </div>
     </div>
-    <a target="_blank" href="https://icons8.com/icon/QW0vkMlpuHXC/triceratops">Triceratops</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>\
-    <div>
-        <h2>Experience</h2>
-        <p>Some projects I have done is creating a small video game and creating an image
-         using turtle in Python. I am currently working on nothing.</p>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="https://www.instagram.com/elena.lovespotatoes/" target="_blank">
+          <img class="bd-placeholder-img rounded-circle" width="110" height="110" src="./images/instagram_logo.png"/>
+        </a>
+        <h2>Instagram</h2>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="https://www.linkedin.com/in/elena-sic-768524332/" target="_blank">
+          <img class="bd-placeholder-img rounded-circle" width="130" height="130" src="./images/linkedin2.jpg"/>
+        </a>
+        <h2>LinkedIn</h2>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="https://github.com/coder71-o" target="_blank">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images/github2.png"/>
+        </a>
+        <h2>GitHub</h2>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Experience</h2>
+        <p class="lead">Some of my projects include creating a small video game using Scratch and some projects using turtle in Python. My most recent project was this website.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="images/pfp.jpg"/>
+      </div>
     </div>
-    <div>
-        <h2>Skills</h2>
-        <p>Moderate knowledge of Python, JavaScript, HTML; critical thinking skills, teamworking skills, math skills</p>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Skills</h2>
+        <p class="lead">Moderate knowledge of Python, JavaScript, HTML; critical thinking skills, teamworking skills, math skills</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/lets_try.png"/>
+      </div>
     </div>
-    <div>
-        <h2>Projects</h2>
-        <p>No projects :(</p>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Projects</h2>
+        <p class="lead">Some of the projects I have done was a rock, paper, scissors game using Python and this website using HTML.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./images/pic3.png"/>
+      </div>
     </div>
-    <div>
-        <h2>Repositories</h2>
-        <p><a href="https://github.com/coder71-o/coder71-o.github.io.git" target="_blank">Github Repository</a></p>
-        <p>I used HTML to create my personal portfolio page.</p>
-    </div>
-    <div>
-        <h2>Education</h2>
-        <p>No educational experience</p>
-    </div>
-    <div>
-        <h2>Awards</h2>
-        <p>No awards</p>
-    </div>
-    <div>
-        <h2>Social Media</h2>
-        <a href="https://github.com/coder71-o" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/elena-sic-768524332/?trk=opento_sprofile_topcard" target="_blank">Linkedin</a>
-    </div>
-    <div>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sice@oregonstate.edu" target="_blank">sice@oregonstate.edu</a><p>
-   </div>
-   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; I mean no harm. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>
