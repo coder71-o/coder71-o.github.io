@@ -9,6 +9,7 @@
   "author": "Elena Sic",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "particles.js": "^2.0.0"
   }
 }
